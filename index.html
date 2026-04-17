@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+    <meta charset ="UTF-8">
+    <meta name="viewport">
+    <content="widht=device-widht-initial-scale=1.0"></content>
+    <title>Empresa 11A</title>
+    <style>
+    :root {
+  --morado: #CC90E8;
+  --azul: #3378BD;
+  --blanco: #ffffff;
+  --gris-claro: #f4f4f4;
+  --morado-oscuro: #422E52;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Sans-Serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #422E52;
+  background-color: var(--blanco);
+}
+
+/* encabezado */
+nav {
+  background-color: var(--morado);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+header {
+  background-color: var(--blanco);
+  color: var(--morado-oscuro);
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 6px solid var(--azul);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--blanco);
+  font-weight: bold;
+  margin: 0 15px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  color: var(--azul);
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+h2 {
+  color: var(--morado);
+  border-bottom: 2px solid var(--azul);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* galeria */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 10fr)); 
+  gap: 10px;
+  margin: 2rem 0;
+}
+
+.card {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+  padding:20px;
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 350px; 
+  object-fit: cover;
+  object-position: center;
+  background-color: var(--gris-claro);
+  border-radius: 8px;
+}
+
+/* formulario */
+.contact-form {
+  background: var(--gris-claro);
+  padding: 30px;
+  border-radius: 8px;
+  border-top: 4px solid var(--morado);
+  margin-top: 3rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Importante para el ancho */
+}
+
+button {
+  background-color: var(--azul);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+button:hover { /* Corregido: :hover */
+  background-color: var(--morado);
+}
+
+footer {
+  background-color: var(--morado);
+  color: white;
+  text-align: center; /* Corregido: align */
+  padding: 1.5rem;
+  margin-top: 4rem;
+}
+  </style>
+  </head>
+  <body>
+    <header>
+      <h1>Visual Memories</h1>
+      <p>Diseña tu historia, crea tu legado</p>
+    </header>
+    <nav>
+      <a href="#inicio">Inicio</a>
+        <a href="Productos.html">Productos</a>
+        <a href="Servicios.html">Servicios</a>
+        <a href="#contacto">Contactos</a>
+    </nav>
+<div class="container">
+      <section id="productos">
+        <div class="gallery">
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/c2/91/8f/c2918f680d887e66cc6a49cab464e5f3.jpg" alt="">
+            <h3>Encuadernación fotográfica personalizada</h3>
+            <img src="https://i.pinimg.com/1200x/af/77/f6/af77f6a5177b85111745ce5b3c513d1a.jpg" alt="">
+            <p>En busca de brindar la oportunidad de materializar recuerdos decorados, estilizados y personalizados en donde capturemos los mejores momentos para cada familia.</p>
+            </div>            </div>
+         </section>
+         <section id="contacto">
+           <div class="contact-form">
+             <h2> Contáctanos </h2>
+             <p> Registra tus datos y te responderemos lo más rápido posible</p>
+             <form>
+               <div class="form-group">
+                 <label for="name"> Nombre completo </label>
+                 <input type="text" id="nombre" placeholder="ej: juan Perez" required>
+               </div>
+               <div class="form-group">
+                 <label for="email"> Correo electronico</label>
+                 <input type="email" id="email" placeholder="juanperez@correo.com" required>
+               </div>
+           <div class="form-group">
+             <label for="mensaje">Detalles del comentario</label>
+             <textarea id="mensaje" rows=5 placeholder="Describe los componentes que necesitan">
+             </textarea>
+               <button types="submit"> Enviar</button>
+               </form>
+               </div>
+               </selection>
